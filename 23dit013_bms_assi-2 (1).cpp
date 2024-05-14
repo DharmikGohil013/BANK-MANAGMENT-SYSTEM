@@ -1,11 +1,11 @@
-
+//all heder files
 #include <iostream>
 #include <fstream>
 #include <cctype>
 #include <iomanip>
 #include <windows.h>
 #include <vector>
-
+// namespace
 using namespace std;
 
 class account
@@ -38,7 +38,7 @@ void account::create_account()
     cin.getline(name,50);
     cout<<"Your Birth Date (DD) : -";
     cin>>birth1;
-    if(birth1>=31 && birth1<=1)
+    if(birth1>31 && birth1<=1)
     {
         cout<<"Not Found!!!!!! ";
         goto rep1;
@@ -87,7 +87,7 @@ void account::create_account()
         cout<<"\nYOUR AC IS MINOR";
     }
     acno=(birth1*1000000)+(birth2*10000)+(birth3);
-    cout<<"\n Your Ac Number is "<<acno;
+    cout<<"\nYour Ac Number is "<<acno;
     cout << "\nEnter Type of The account (C/S) : ";
     cin >> type;
     type = toupper(type);
@@ -217,7 +217,7 @@ int main()
     int i;
     logo();
     system("cls");
-    cout<<"\n\n \t You Are BankStaff or User (BankStaff Press 1 or User Press 2 ) : - ";
+    cout<<"\n\n \t You Are BankStaff \nor User (BankStaff Press \n1 or User Press 2 ) : - ";
     cin>>i;
     int pass=123, pass1;
     if(i==1)
