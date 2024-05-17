@@ -1,13 +1,10 @@
-//all heder files
 #include <iostream>
 #include <fstream>
 #include <cctype>
 #include <iomanip>
 #include <windows.h>
 #include <vector>
-// namespace
 using namespace std;
-
 class account
 {
     int birth1;
@@ -283,7 +280,6 @@ int main()
     while (ch != '5');
     }
         }
-
 else if(i!=2)
 {
     cout<<"\n\t\tYour PassWord is Wrrong !! ";
@@ -515,7 +511,3 @@ void modify_account(int n)
 	if (found == false)
 		cout << "\n\n Record Not Found ";
 }
-// Modify the display_sp function to pass the account number to display_transaction_history
-
-
-// Modify the display_transaction_history function to use the accountNumber parameter
